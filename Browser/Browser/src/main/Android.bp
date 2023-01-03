@@ -1,0 +1,29 @@
+package {
+    default_applicable_licenses: ["packages_apps_Browser_license"],
+}
+
+license {
+    name: "packages_apps_Browser_license",
+}
+
+android_app {
+    name: "Browser",
+    sdk_version: "current",
+    srcs: [
+    "java/**/*.java",
+    ],
+    static_libs: [
+        "android-common",
+        "guava",
+        "androidx.legacy_legacy-support-v13",
+        "androidx.legacy_legacy-support-v4",
+        "androidx.core_core",
+    ],
+    product_specific: true,
+    optimize: {
+        proguard_flags_files: ["proguard.flags"],
+    },
+
+    // Guava uses deprecated org.apache.http.legacy classes.
+    libs: ["org.apache.http.legacy"],
+}
