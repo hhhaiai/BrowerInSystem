@@ -1,6 +1,6 @@
 # BrowerInSystem
 
-内置浏览器到aosp源码中
+内置浏览器源码到aosp源码中，使用编写Android.bp方式进行集成
 
 ## 基于安卓13进行修改
 
