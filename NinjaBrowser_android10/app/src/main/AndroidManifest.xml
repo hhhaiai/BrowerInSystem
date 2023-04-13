@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="io.github.mthli.Ninja" android:versionCode="26" android:versionName="1.3.4">
+    package="io.github.mthli.Ninja"
+    android:versionCode="26"
+    android:versionName="1.3.4">
 
 
     <!-- Permission -->
